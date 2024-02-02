@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Diphylleia&family=Sixtyfour:BLED@68&display=swap');
+.arimo- {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.sixtyfour-{
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "BLED" 68,
+            "SCAN" 0;
+}
+.diphylleia-regular {
+    font-family: "Diphylleia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
