@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        sup {
+            color: red;
+        }
+
+        textarea {
+            width: 200px;
+            height: 50px;
+            resize: none;
+        }
+
+        /*form{*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    justify-items: center;*/
+        /*    align-items: center;*/
+        /*}*/
+        input[type="text"] {
+            width: 200px;
+            height: 50px;
+            border: 3px solid #9B6F6F;
+            border-radius: 3px;
+            background-color: lightcyan;
+            color: coral;
+            text-overflow: ellipsis;
+        }
+
+        input[type="text"]::placeholder {
+            color: darkcyan;
+            font-family: "Arimo", sans-serif;
+        }
+
+        input[type="text"]:focus {
+            /*background-color: #8688cc;*/
+            /*outline: 3px solid hotpink;*/
+            outline: none;
+            border: 3px solid #c7256f;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid palevioletred;
+            border-radius: 4px;
+            margin: -2px;
+        }
+
+        input[type="checkbox"]:checked {
+            /*background-color: lavenderblush;*/
+            background-image: url("data:image/png;base64,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");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="name">Введіть свій пароль</label>
+    <input type="text" name="username" id="name" placeholder="Name" required><sup>*</sup>
+
+    <label for="password">Введіть своє ім'я</label>
+    <input type="password" name="password" id="password" placeholder="qwery123" required>
+
+    <label for="age">Введіть свій вік</label>
+    <input type="number" name="age" id="age" min="18" max="99">
+
+    <label> Стать </label>
+    <label><input type="radio" name="gender" value="mail">Чоловіча</label>
+    <label><input type="radio" name="gender" value="femail"> Жіноча </label>
+
+    <label>
+        <input type="checkbox" name="news"> Підписатись на новини
+    </label>
+
+    <select>
+        <optgroup label="Група 1">
+            <option>Варіант 1</option>
+            <option>Варіант 2</option>
+            <option>Варіант 3</option>
+        </optgroup>
+        <optgroup label="Група 2">
+            <option>Варіант 1</option>
+            <option>Варіант 2</option>
+            <option>Варіант 3</option>
+        </optgroup>
+    </select>
+
+    <label for="text">Введіть свій коментар</label>
+    <textarea id="text"></textarea>
+    <br>
+    <input type="submit" value="Тиць">
+    <input type="reset">
+
+
+</form>
+
+</body>
+</html>
