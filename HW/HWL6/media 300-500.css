@@ -1,0 +1,23 @@
+@media screen and (min-width: 300px) and (max-width: 500px){
+    header {
+        margin: 5px;
+        width: 100vw;
+        height: 15vh;
+        background-color: #beb8b8;
+    }
+    div {
+        flex-direction: column;
+    }
+    section{
+        margin: 5px;
+        width: 100vw;
+        height: 60vh;
+        background-color: #beb8b8;
+    }
+    article{
+        margin: 5px;
+        width: 100vw;
+        height: 15vh;
+        background-color: #beb8b8;
+    }
+}
